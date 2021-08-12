@@ -20,11 +20,11 @@ spec:
           - cluster: engineering-dev
             url: https://kubernetes.default.svc
             values:
-              project: dev
+              project: default
           - cluster: engineering-prod
             url: https://126296b7-844e-4379-9608-64e078e936e5.k8s.ondigitalocean.com
             values:
-              project: prod
+              project: default
   template:
     metadata:
       name: '{{path.basename}}-{{cluster}}'
