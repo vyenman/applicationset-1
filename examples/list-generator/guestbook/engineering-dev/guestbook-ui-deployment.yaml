@@ -16,6 +16,7 @@ spec:
       containers:
       - image: quay.io/redhat-scholars/pacman-kikd:1.0.0 # nginxinc/nginx-unprivileged:latest
         name: pacman-gitops # guestbook-ui
+        imagePullPolicy: Always
         resources:
           requests:
             memory: "64Mi"
